@@ -14,7 +14,7 @@ To make this work, the idea was that in the tablet application the user can plac
 
 Doing this in Unity turned out to be far less complex than I expected it to be. Firstly, we serialize the scene in a format that we can load in the editor. Luckily, as we already have the tablet tool completed and had a JSON format that the app+Unity can read. When we press ‘Save’ in the app, the app sends the JSON to the VR scene which in turn saves the file on a network computer which is going to do the actual baking and runs a batch script on that computer.
 
-> D:\\Unity5\\Editor\\unity.exe -batchmode -projectPath <Project Path> -executeMethod NetworkBuilder.BuildAssets -quit %\*
+> D:\\Unity5\\Editor\\unity.exe -batchmode -projectPath _project_path_ -executeMethod NetworkBuilder.BuildAssets -quit %\*
 
 Thats all that there is to it in the batch script. Lets break it down step by step.
 
@@ -22,7 +22,7 @@ Thats all that there is to it in the batch script. Lets break it down step by st
 
 **projectPath:** The project to load in Unity
 
-**executeMethod:** This allows us to run a function in an Editor script as soon as the project is loaded! We call the function in <ClassName>.<FunctionName> order. NetworkBuilder was the class I was using and BuildAssets was the function.
+**executeMethod:** This allows us to run a function in an Editor script as soon as the project is loaded! We call the function in _ClassName_._FunctionName_ order. NetworkBuilder was the class I was using and BuildAssets was the function.
 
 **quit:** Quit as soon as the function returns.
 

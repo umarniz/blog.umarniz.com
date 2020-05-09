@@ -37,7 +37,7 @@ Now the only task was to pull these functions into my own code before creating t
 
 Now, all I needed to do was to implement functions from the DLLs into my code to unlock the stream before creating the direct show filters. Todo that I first exported the headers for the dlls using dumpbin which is accompanied in visual studio.
 
-dumpbin /exports <name of dll>
+dumpbin /exports _name_of_dll_
 
 Returned this:
 

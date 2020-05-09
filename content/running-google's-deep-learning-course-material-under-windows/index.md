@@ -37,7 +37,7 @@ We will use [Putty](http://www.putty.org/) to connect via SSH so install Putty o
 
 Before we configure Putty to connect to the VM, we would need to convert the Open SSH key to be usable with Putty. To do this, run PuttyGen. Next from the menu bar click File -> Load private key.
 
-Next select C:/users/<your username>/.vagrant/insecure\_private\_key (You will not see this file until you select All Files from the bottom of the browse dialog). NOTE: As the name suggests this is an insecure private key and not usable for a production build but fair enough to test things out for now.
+Next select C:/users/_your_username_/.vagrant/insecure\_private\_key (You will not see this file until you select All Files from the bottom of the browse dialog). NOTE: As the name suggests this is an insecure private key and not usable for a production build but fair enough to test things out for now.
 
 After you have loaded the insecure\_private\_key file from the menu bar select File -> Save private key and save it wherever you prefer.
 
